@@ -24,7 +24,7 @@ push-release:
         working-dir: /pipeline/source
         ports: $PORT
         env: PORT=$PORT
-        cmd: sh target/bin/start#Deploy our container from the Docker Hub to Kubernetes
+        cmd: sh target/bin/start
 deploy-to-cluster:
     box:
         id: alpine
